@@ -4,7 +4,7 @@ import axios from 'axios'
     (replacing the placeholder with your Github name):
     https://api.github.com/users/<your name>
 */
-const followersArray = [ 'k509', 'r-gio28', 'coltonrhodenbaugh', 'justsml', 'luishrd', 'bigknell']
+const followersArray = [, 'r-gio28', 'coltonrhodenbaugh', 'justsml', 'luishrd', 'bigknell']
 
 for(let i = 0; i < followersArray.length; i++){
   getGitCard(followersArray[i]);
@@ -17,6 +17,7 @@ function getGitCard(username){
 })
 .catch(err => console.error(err))
 }
+getGitCard('k5709')
 /*
   STEP 2: Inspect and study the data coming back, this is YOUR
     github info! You will need to understand the structure of this
